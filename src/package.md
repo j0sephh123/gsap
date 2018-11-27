@@ -1,0 +1,1 @@
+yarn add axios vue-axios bulma @fortawesome/fontawesome-free
