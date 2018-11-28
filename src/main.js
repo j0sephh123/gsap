@@ -10,25 +10,28 @@ import '../node_modules/bulma/css/bulma.css'
 import '@/assets/loading.css'
 import '@/assets/loading-btn.css'
 
-import '@fortawesome/fontawesome-free';
+import '@fortawesome/fontawesome-free'
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
+
+// bulma extensions
+import '../node_modules/bulma-extensions/bulma-slider/dist/css/bulma-slider.min.css'
 
 ApiService.init();
 
 
 Vue.config.productionTip = false;
 
-router.beforeEach((to, from, next) => {
+// router.beforeEach((to, from, next) => {
   
-  if(from.name === 'OneTodo') {
-    console.log(store.getters['todos/oneTodo']);
-    store.commit('todos/getOne', {})
-    console.log(store.getters['todos/oneTodo']);
-  }
+//   if(from.name === 'OneTodo') {
+//     console.log(store.getters['todos/oneTodo']);
+//     store.commit('todos/getOne', {})
+//     console.log(store.getters['todos/oneTodo']);
+//   }
 
-  next();
+//   next();
   
-})
+// })
 
 new Vue({
   router,
